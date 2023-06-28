@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title>loading screen demo</title>
+	<head>
+		<style>
+			.loader {
+				display: flex;
+				justify-content: center;
+				align-content: center;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-image: url("back2.jpg");
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center;
+				transition: opacity 1s, visibility 1s;
+			}
+			.loader--hidden {
+				opacity: 0;
+				visibility: hidden;
+			}
+			.imageContainer img{
+				display: block;
+				margin: 0 auto;
+				max-width: 37%;
+			}
+			.intro{
+				display: flex;
+				justify-content: center;
+				align-content: center;
+				max-height: 8vh;
+				font-size: 1.25vw;
+				font-family: fantasy;
+				background: linear-gradient(to right,rgba(255,255,255,0),rgba(53,194,168),rgba(255,255,255,0));
+			}
+			.name{
+				position: fixed;
+				top: 61%;
+				left: 40%;
+				font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+				font-size: 1.5vw;
+				text-shadow: 2px -1px 50px white;
+				
+				/* background-color: rgba(53,194,168); */
+			}
+			.heading{
+				position: fixed;
+				top: 53%;
+				left: 43.5%;
+				font-family:sans-serif;
+				font-size: 1.75vw;
+				text-shadow: 2px -1px 5px white;
+			}
+
+		</style>
+
+		<script>
+			window.addEventListener("load", () => {
+				const loader = document.querySelector(".loader");
+				
+				setTimeout(() => {
+					loader.classList.add("loader--hidden");
+					loader.addEventListener("transitionend", () => {
+						document.body.removeChild(loader);
+					});
+				}, 4000);
+			});
+
+		</script>
+
+	</head>
+	<body>
+		<div class="loader">
+			<div class="imageContainer"><br><br>
+				<img src="logo/OnesCut logo.png" alt="OnesCut logo">
+				<div class="intro">
+					<p>T &nbsp;H&nbsp; E&nbsp; &nbsp; &nbsp; A&nbsp; R&nbsp; T&nbsp; &nbsp; &nbsp; O&nbsp; F&nbsp; &nbsp; &nbsp; C&nbsp; I&nbsp; N&nbsp; E&nbsp; M&nbsp; A&nbsp;</p><br><br><br>
+				</div>
+			</div>
+			<h4 class="heading">Group Members</h4>
+			<div class="name">
+				<ol>
+					<li>&nbsp;Danidu Matheesha Srinath</li>
+					<li>&nbsp;Chethiya Kaushalya Peiris</li>
+					<li>&nbsp;Chamika Dilshan</li>
+					<li>&nbsp;Nirmal Anjelo Dabarera</li>
+				</ol>
+			</div>
+		</div>
+
+		<!-- main page goes here..  -->
+		<h1 style="text-align: center;">Sample content</h1>
+		<p>The sun set behind the horizon, casting a warm golden glow over the tranquil meadow. The gentle breeze rustled through the tall grass, creating a soothing 
+			melody that blended with the chirping of birds. A sense of serenity enveloped the surroundings as nature embraced its evening slumber. The air was filled 
+			with the scent of wildflowers, their vibrant colors painting a picturesque scene against the backdrop of the deepening twilight. Time seemed to stand 
+			still in this idyllic haven, offering a moment of respite from the bustling world outside. As the stars emerged, one by one, a blanket of calm settled 
+			over the meadow, inviting contemplation and reflection under the vast, awe-inspiring expanse of the night sky.</p>
+
+	</body>
+</html>
