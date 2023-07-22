@@ -1,5 +1,9 @@
 /* --------- Top Rated Movies stylesheet ----------- */
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background-image: url("/Images/top-rated-movies-background.jpg");
   background-size: cover;
@@ -8,14 +12,22 @@ body{
 }
 
 /* navigation bar */
+.logo{
+  display: flex;
+  width: 10px;
+  height: 28px;
+  margin-right: 63%;
+  padding-top: 2px;
+}
+
 .navbar {
     position: fixed;
     z-index: 1;
-    display: flex;
+    display: inline-flex;
     top: 6vh;
     right: 0;
     justify-content: right;
-    background-color: rgb(18, 17, 17,0.75);
+    background-color: rgba(39, 39, 39, 0.75);
     backdrop-filter: blur(3px);
     width:100vw;
     height: 5vh;
@@ -49,22 +61,22 @@ body{
     font-size: 120px;
     -webkit-text-stroke: 2.5px;
     position: absolute;
-    top: 15vh;
-    left: 37vw;
+    top: 15%;
+    left: 37%;
     color: rgba(53,194,168);
   }
   .topicTxt1{
     position: absolute;
-    top: 17.5vh;
-    left: 41.5vw;
+    top: 17.5%;
+    left: 41.5%;
     color: rgb(211, 211, 211);
     font-size: 51px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   .topicTxt2{
     position: absolute;
-    top: 24vh;
-    left: 50vw;
+    top: 24%;
+    left: 50%;
     font-size:33px;
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

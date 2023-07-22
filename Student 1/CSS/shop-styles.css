@@ -1,0 +1,134 @@
+/* --------- Top Rated Movies stylesheet ----------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+
+
+*{
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background: linear-gradient(to bottom,#303030 30%,#69837e)
+}
+
+.container .cart{
+    display: flex;
+    position: fixed;
+    right: 2.25%;
+    align-items: center;
+    z-index: 2;
+}
+.container .cart p{
+    color: #cccccc;
+    font-size: 22px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 250px;
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+}
+
+.container{
+    margin-left: 9%;
+    margin-right: 9%;
+}
+.container .heading{
+    padding-top: 6vh;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 2px;
+    margin-bottom: 0px;
+    color: rgba(53,194,168);
+    text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+}
+.container .subHeading{
+    margin-left: 1.5%;
+    margin-top: 0px;
+    margin-bottom:60px;
+    letter-spacing: 4px;
+    background-color: #6f9e95;
+    font-size: 20px;
+    text-align: center;
+}
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 100px;
+    
+}
+img:hover{
+    transform: scale(1.05);
+}
+.container .box-container .box .btn{
+    position: relative;
+    left: 128px;
+    margin-bottom: 50px;
+    display: inline-block;
+    background-color: rgba(53,194,168);
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 6px 18px;
+    transition: 0.2s ease-in;
+}
+.container .box-container .box .btn:hover{
+    transform: scale(1.03);
+    -webkit-text-stroke: 0.1px;
+}
+.name{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.price{
+    width: fit-content;
+    padding: 0%;
+    margin:0%;
+    color: #cccccc;
+}
+.price:hover{
+    color: rgb(0, 0, 0);
+}
+
+.container2{
+    display: flex;
+    position: absolute;
+    height: 100%;
+    top: 0%;
+    left: 77%;
+    z-index: 1;
+    width:23%;
+}
+#root{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.sidebar{
+    width: 100%;
+    background-color: #6f9e95;
+    padding: 25px 25px;
+    text-align: center;
+}
+.head{
+    display: flex;
+    background-color: #303030;
+    border-radius: 10px;
+    height: 40px;
+    padding: 1px;
+    margin-bottom: 20px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 0px 0px;
+    border-top: 1px solid #303030;
+}
