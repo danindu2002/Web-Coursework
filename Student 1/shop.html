@@ -27,7 +27,13 @@
             <div class="sidebar" id="sidebar">
                 <div class="head"><p>My Cart</p></div>
                 <div id="cartItem">Your cart is empty</div>
-                <div class="checkout" id="checkout">Checkout</div>
+                <div class="details">
+                    <input type="text" placeholder="Name" id="name">
+                    <input type="email" placeholder="Email" id="email">
+                </div>
+                <div class="checkout" id="checkout">
+                    <a id="checkoutLink" href="/checkout.html" onclick="redirectToCheckout()" style="text-decoration: none; color: black;">Checkout</a>
+                </div>
                 <div class="foot">
                     <h3>Total</h3>
                     <h2 id="total">$ 0.00</h2>
