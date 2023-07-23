@@ -18,7 +18,7 @@ body{
     top: 4.1%;
     right: 3%;
     align-items: center;
-    z-index: 2;
+    z-index: 4;
 }
 .container .cart p{
     color: #cccccc;
@@ -26,6 +26,16 @@ body{
     padding-left: 15px;
     display: flex;
     justify-content: center;
+}
+#cart-icon{
+    transform: scale(1.5);
+    color: rgba(53,194,168);
+}
+#trash-icon{
+    position: relative;
+    right: 49px;
+    bottom: 28px;
+    color: rgba(53,194,168);
 }
 
 .main-img{
@@ -39,6 +49,7 @@ body{
     margin-right: 9%;
 }
 .container .heading{
+    margin-top: 3%;
     padding-top: 6vh;
     text-align: center;
     font-size: 50px;
@@ -62,6 +73,7 @@ body{
     left: 128px;
     margin-bottom: 50px;
     display: inline-block;
+    cursor: pointer;
     background-color: rgba(53,194,168);
     font-size: 15px;
     -webkit-text-stroke: 0.5px;
@@ -74,8 +86,9 @@ body{
 }
 
 .box-container .box .btn:hover, .checkout:hover{
-    transform: scale(1.02);
-    background-color: #606060;
+    cursor: pointer;
+    background-color: #a21bc1;
+    color: white;
 }
 .name{
     margin-top: 5px;
@@ -88,7 +101,7 @@ body{
     color: #cccccc;
 }
 .price:hover{
-    color: rgb(0, 0, 0);
+    color: #a21bc1;
 }
 
 .head{
@@ -139,6 +152,7 @@ body{
     grid-gap: 0px 200px;
 }
 .sidebar{
+    z-index: 1;
     position: fixed;
     top: 0%;
     right: 0%;
@@ -170,9 +184,10 @@ body{
     border-radius: 5px;
     max-width: 60px;
 }
-i:hover{
+#cart-icon:hover, #trash-icon:hover{
     cursor: pointer;
-    color: #323131;
+    transform: scale(1.3);
+    color: #a21bc1;
 }
 .cart-name{
     font-size: 15px;
@@ -185,11 +200,16 @@ i:hover{
     font-size: 15px;
     position: relative;
     margin-left: 96px;
-    right: 84px;
+    right: 72px;
     bottom: 30px;
 }
-#trash{
-    position: relative;
-    right: 47px;
-    bottom: 28px;
+.overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
 }

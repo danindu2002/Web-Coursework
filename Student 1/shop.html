@@ -15,17 +15,19 @@
     </head>
     <body>
         <div class="container">
-            <div class="cart"><i class="fa-solid fa-cart-shopping" style="color: #35c2a8; transform: scale(1.5);"></i><p id="count">0</p></div>
+            <div class="cart"><i id="cart-icon" class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
             <h1 class="heading">SHOP COLLECTIBLES</h1>
             <h2 class="subHeading">HOT ACTION FIGURES</h2>
         </div>
 
+        <div class="overlay" id="overlay"></div>
+
         <div class="container2">
             <div id="root"></div>
-            <div class="sidebar">
+            <div class="sidebar" id="sidebar">
                 <div class="head"><p>My Cart</p></div>
                 <div id="cartItem">Your cart is empty</div>
-                <button class="checkout">Checkout</button>
+                <div class="checkout" id="checkout">Checkout</div>
                 <div class="foot">
                     <h3>Total</h3>
                     <h2 id="total">$ 0.00</h2>

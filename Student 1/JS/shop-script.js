@@ -11,7 +11,7 @@ const products = [
     { id: 4, image: '/Images/3-general-grievous.jpg', title: 'GENERAL GRIEVOUS', price: 249},
     { id: 5, image: '/Images/2-gambit.jpg', title: 'GAMBIT DELUXE', price: 239},
     { id: 6, image: '/Images/4-the-crow.jpg', title: 'THE CROW', price: 179},
-    { id: 7, image: '/Images/6-rey.jpg', title: 'REY', price: 3},
+    { id: 7, image: '/Images/6-rey.jpg', title: 'REY', price: 342},
 ];
 
 let i = 0;
@@ -32,7 +32,15 @@ document.getElementById('root').innerHTML = products.map((item) =>{
 var cart = [];
 
 function addToCart(a){
-    cart.push({...products[a]});
+    const exisitngItemIndex = cart.findIndex(item => item.id === products[a].id);
+    
+    if(exisitngItemIndex !== -1){
+        cart[exisitngItemIndex].quantity++;
+    }
+    else{
+        cart.push({...products[a], quantity: 1});
+    }
+
     displayCart();
 }
 
@@ -56,8 +64,8 @@ function displayCart(a){
         cartItemContainer.innerHTML = `
             <div class="cart-item-container">
                 ${cart.map((items) => {
-                var {image, title, price} = items;
-                total += price;
+                var {image, title, price, quantity} = items;
+                total += price * quantity;
                 cartTotalElement.innerHTML = "$ " + total;
                 return(
                     `<div class = 'cart-item'>
@@ -66,8 +74,8 @@ function displayCart(a){
                             </div>
                             <div>
                                 <p class='cart-name'>${title}</p>
-                                <h2 class='cart-price'>$ ${price}</h2> 
-                                <i id='trash'class = 'fa-solid fa-trash' style='color: #35c2a8; transform: scale(1.1);' onclick = 'delElement(${(j++)})'></i>
+                                <h2 class='cart-price'>$ ${price} * ${quantity}</h2> 
+                                <i id='trash-icon'class = 'fa-solid fa-trash' onclick = 'delElement(${(j++)})'></i>
                             </div>
                         </div>`
                     );
@@ -76,3 +84,31 @@ function displayCart(a){
         `;
     }
 }
+
+
+// pop up behaviour of the sidebar
+
+const overlay = document.getElementById('overlay');
+const sidebar = document.getElementById('sidebar');
+const chechoutButton = document.getElementById('checkout');
+
+function showSidebar(){
+    sidebar.style.right = '0';
+    overlay.style.display = 'block';
+    chechoutButton.style.display = 'block';
+}
+
+function hideSidebar(){
+    sidebar.style.right = '-40%';
+    overlay.style.display = 'none';
+    chechoutButton.style.display = 'none';
+}
+
+document.querySelector('.cart').addEventListener('click', showSidebar);
+
+overlay.addEventListener('click', hideSidebar);
+sidebar.addEventListener('click', function(event){
+    event.stopPropagation();
+});
+
+hideSidebar();
