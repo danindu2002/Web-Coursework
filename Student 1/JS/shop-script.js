@@ -4,14 +4,14 @@
 // containing all products into products array 
 
 const products = [
-    { id: 0, image: '/Images/1-iron-man.jpg', title: 'IRON MAN MARK XLIII', price: 399},
-    { id: 1, image: '/Images/7-wolverine.jpg', title: 'WOLVERINE', price: 254},
-    { id: 2, image: '/Images/5-storm.jpg', title: 'STORM', price: 349},
-    { id: 3, image: '/Images/8-yennefer.jpg', title: 'YENNEFER', price: 389},
-    { id: 4, image: '/Images/3-general-grievous.jpg', title: 'GENERAL GRIEVOUS', price: 249},
-    { id: 5, image: '/Images/2-gambit.jpg', title: 'GAMBIT DELUXE', price: 239},
-    { id: 6, image: '/Images/4-the-crow.jpg', title: 'THE CROW', price: 179},
-    { id: 7, image: '/Images/6-rey.jpg', title: 'REY', price: 342},
+    { id: 0, image: 'Images/1-iron-man.jpg', title: 'IRON MAN MARK XLIII', price: 399},
+    { id: 1, image: 'Images/7-wolverine.jpg', title: 'WOLVERINE', price: 254},
+    { id: 2, image: 'Images/5-storm.jpg', title: 'STORM', price: 349},
+    { id: 3, image: 'Images/8-yennefer.jpg', title: 'YENNEFER', price: 389},
+    { id: 4, image: 'Images/3-general-grievous.jpg', title: 'GENERAL GRIEVOUS', price: 249},
+    { id: 5, image: 'Images/2-gambit.jpg', title: 'GAMBIT DELUXE', price: 239},
+    { id: 6, image: 'Images/4-the-crow.jpg', title: 'THE CROW', price: 179},
+    { id: 7, image: 'Images/6-rey.jpg', title: 'REY', price: 342},
 ];
 
 let i = 0;

@@ -1,0 +1,33 @@
+/* page editor styles */
+
+*{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.container{
+    background-color: rgb(115, 82, 223);
+    margin: 0% 25%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 40px;
+}
+.main{
+    background-color: rgb(244, 244, 244);
+    color: black;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 10px;
+}
+h1,h2{
+    background-color: rgb(71, 71, 71);
+    border-radius: 15px;
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(118, 237, 255);
+}
