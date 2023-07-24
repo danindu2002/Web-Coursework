@@ -1,5 +1,6 @@
 // --------- Checkout script file -----------
 
+
 let isDetailsCompleted = false;
 
 const formBilling = document.getElementById("form-billing");
@@ -12,6 +13,7 @@ if(document.readyState == "loading"){
     ready();  
 }
 
+// loading data from the previous page using URL parameters
 window.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const nameParam = urlParams.get('name');
@@ -52,11 +54,7 @@ function ready(){
     formPayment.addEventListener("submit", formPaymentSubmitted)
 }
 
-function formClosed(event){
-    billingOverlay.classList.remove("show");
-    document.body.removeChild(billingOverlay);
-    formBilling.style.display = "none";
-}
+// poping up edit details form
 
 function billingLinkClicked(event) {
     event.preventDefault();
@@ -67,8 +65,6 @@ function billingLinkClicked(event) {
     
     formBilling.style.display = "block";
 }
-
-
 function overlayClicked(event) {
     if (event.target === billingOverlay) {
       billingOverlay.classList.remove("show");
@@ -77,9 +73,9 @@ function overlayClicked(event) {
     }
 }
 
+// validating and submitting payment form
 function formPaymentSubmitted(event){
     const formPayment = document.getElementById("form-payment");
-    
     const cardNumber = formPayment.querySelector("#cnumber")
     const cardName = formPayment.querySelector("#cname")
     const cvc = formPayment.querySelector("#cvc")
@@ -90,6 +86,7 @@ function formPaymentSubmitted(event){
     const yearValue = parseInt(expYear.value.trim());
 
     event.preventDefault();
+    // checking if the edit details form is cpmpleted before confirmation
     if(!isDetailsCompleted){
         alert('Please submit the form in the "Edit Details".');
         return;
@@ -128,13 +125,14 @@ function formPaymentSubmitted(event){
         return;
     }
 
+    // showing an alert and resetting the form if successfull
     alert('Payment Confirmed Successfully')
     formPayment.reset();
 }
 
+// validating and submitting the user details form
 function formSubmitted(event) {
     const form = document.getElementById('form-billing');
-
     const name = form.querySelector('#fname');
     const contactNo = form.querySelector('#contact');
     const email = form.querySelector('#email');
@@ -144,7 +142,6 @@ function formSubmitted(event) {
     const month = form.querySelector('#month');
     const year = form.querySelector('#year');
 
-    const contactValue = parseInt(contactNo.value.trim());
     const dayValue = parseInt(day.value.trim());
     const monthValue = parseInt(month.value.trim());
     const yearValue = parseInt(year.value.trim());
@@ -191,12 +188,12 @@ function formSubmitted(event) {
         return;
     }
 
+    // showing an alert and allowing user to continue if successfull
     isDetailsCompleted = true;
     alert('Submitted successfully. Now you can confirm your order in checkout')
 }
 
 function formReseted(event){
     const form = document.getElementById('form-billing');
-
     form.reset();
 }

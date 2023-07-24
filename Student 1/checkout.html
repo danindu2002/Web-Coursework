@@ -8,11 +8,28 @@
         <!--external stylesheet-->
 		<link rel="stylesheet" href="CSS/checkout-styles.css">
 
+         <!--external stylesheet for the main navbar-->
+		<link rel="stylesheet" href="CSS/main-navbar.css">
+
         <!-- page icon -->
 		<link rel="icon" href="logo/title-logo.png" type="image/png">
     </head>
     <body>
-        <div class="wrapper">
+        <!-- Main page navigation Bar -->
+        <header>
+            <ul id="nav">
+                <li><a href="#h">Home</a></li>
+                <li><a href="comments.html">Comments</a></li>
+                <li class="active"><a href="#s">Shop</a></li>
+                <li><a href="#q">Quiz</a></li>
+                <li><a href="#g">Gallery</a></li>
+                <li><a href="#m">Site Map</a></li>
+                <li><a href="#a">About Us</a></li>
+            </ul>
+        </header>
+
+        <!-- order summary section -->
+        <div class="wrapper" style="margin-top: 10%;">
             <h2>Checkout</h2>
             <form id="form-cart">
                 <section class="order-sum">
@@ -26,6 +43,8 @@
                 </section>
             </form>
         </div>
+
+        <!-- payment section -->
         <div class="wrapper" style="margin-top: 1rem;">
             <form id="form-payment" method="get">
                 <section class="payment-details">
@@ -65,7 +84,8 @@
             </form>
 
             <a href="#" id="form-link" style="text-decoration: none; text-align: center;">Edit Details</a>
-    
+            
+            <!-- edit details pop -->
             <form id="form-billing" style="display: none;" method="get">
                 <h4 class="form-title">Billing Address</h4>
                 <div class="input_group">
@@ -121,16 +141,18 @@
                 </div>
                 <div class="input_group">
                     <div class="input_box">
-                        <button type="submit" id="btn_change">SUBMIT CHANGES</button>
+                        <button type="submit" id="btn_change">Submit Changes</button>
                     </div>
                 </div>
                 <div class="input_group">
                     <div class="input_box">
-                        <button type="reset" id="btn_reset">RESET CHANGES</button>
+                        <button type="reset" id="btn_reset">Reset Changes</button>
                     </div>
                 </div>
             </form>
         </div>
+        
+        <a href="page-editor-student1.html" id="page-editor">Page Editor</a>
 
         <!--external script file-->
 		<script src="JS/checkout-script.js"></script>

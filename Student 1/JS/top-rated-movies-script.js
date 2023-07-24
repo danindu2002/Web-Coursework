@@ -29,11 +29,11 @@ function setActiveTab(){
         }
     })
     if(activeIndex >= 0){
-        navLinks.forEach((link) => link.classList.remove('active'));
-        navLinks[activeIndex].classList.add('active');
+        navLinks.forEach((link) => link.classList.remove('active1'));
+        navLinks[activeIndex].classList.add('active1');
     }
 }
 setActiveTab();
 
-// adding an event listner to scroll
+// listening for the event scroll
 window.addEventListener('scroll', setActiveTab)

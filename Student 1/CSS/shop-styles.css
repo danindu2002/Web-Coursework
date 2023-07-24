@@ -4,10 +4,10 @@
 
 
 *{
-    font-family: 'Poppins',sans-serif;
     padding: 0%;
     margin: 0%;
 }
+
 body{
     background: linear-gradient(to bottom,#303030 30%,#69837e);
 }
@@ -15,10 +15,10 @@ body{
 .container .cart{
     display: flex;
     position: fixed;
-    top: 4.1%;
+    bottom: 89%;
     right: 3%;
     align-items: center;
-    z-index: 4;
+    z-index: 5;
 }
 .container .cart p{
     color: #cccccc;
@@ -49,6 +49,7 @@ body{
     margin-right: 9%;
 }
 .container .heading{
+    font-family: 'Poppins',sans-serif;
     margin-top: 3%;
     padding-top: 6vh;
     text-align: center;
@@ -60,6 +61,7 @@ body{
     text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
 }
 .container .subHeading{
+    font-family: 'Poppins',sans-serif;
     margin-left: 1.5%;
     margin-top: 0px;
     margin-bottom:60px;
@@ -70,6 +72,7 @@ body{
     text-align: center;
 }
 .box-container .box .btn{
+    font-family: 'Poppins',sans-serif;
     position: relative;
     left: 128px;
     margin-bottom: 50px;
@@ -95,10 +98,12 @@ body{
     border: 2px solid rgba(53,194,168);
 }
 .name{
+    font-family: 'Poppins',sans-serif;
     margin-top: 5px;
     margin-bottom: 0px;
 }
 .price{
+    font-family: 'Poppins',sans-serif;
     width: fit-content;
     padding: 0%;
     margin:0%;
@@ -109,17 +114,20 @@ body{
 }
 
 .head{
+    font-family: 'Poppins',sans-serif;
     display: flex;
     background-color: #303030;
     border-radius: 10px;
     height: 40px;
     padding: 1px 25px;
+    margin-top: 15px;
     margin-bottom: 20px;
     color: white;
     justify-content: left;
     align-items: center;
 }
 .foot{
+    font-family: 'Poppins',sans-serif;
     display: flex;
     flex-direction: row;
     position: fixed;
@@ -131,6 +139,7 @@ body{
     background-color: transparent;
 }
 .checkout{
+    font-family: 'Poppins',sans-serif;
     position: fixed;
     top: 77%;
     right: 35%;
@@ -156,7 +165,7 @@ body{
     grid-gap: 0px 200px;
 }
 .sidebar{
-    z-index: 1;
+    z-index: 3;
     position: fixed;
     top: 0%;
     right: 0%;
@@ -241,4 +250,17 @@ body{
     padding: 4px;
     padding-left: 15px;
     border: none;
+}
+
+#page-editor{
+    position: absolute;
+    left: 47%;
+    text-decoration: none;
+    background-color: rgb(34, 109, 167,0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
 }

@@ -24,7 +24,7 @@ body{
     position: fixed;
     z-index: 1;
     display: inline-flex;
-    top: 6vh;
+    top: 5.9vh;
     right: 0;
     justify-content: right;
     background-color: rgba(39, 39, 39, 0.75);
@@ -46,10 +46,10 @@ body{
     color: white;
     font-size: 19px;
   }
-  .navbar a:active {
+  .navbar a:active1 {
     color: rgb(53,194,168);
   }
-  .navbar a.active{
+  .navbar a.active1{
     color:black;
     background-color: rgba(53,194,168);
     font-size: 19px;
@@ -57,7 +57,6 @@ body{
 
   /* Main topic */
   .topicNum{
-    /* float: left; */
     font-size: 120px;
     -webkit-text-stroke: 2.5px;
     position: absolute;
@@ -196,3 +195,16 @@ body{
     font-weight: bold;
     font-size: 19px;
   }
+
+  #page-editor{
+    position: absolute;
+    left: 47%;
+    text-decoration: none;
+    background-color: rgb(34, 109, 167,0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}

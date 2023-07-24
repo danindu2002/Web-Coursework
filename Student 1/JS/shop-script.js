@@ -1,8 +1,7 @@
 // --------- Shop script file -----------
 
 
-// containing all products into products array 
-
+// containing all products into a products array 
 const products = [
     { id: 0, image: 'Images/1-iron-man.jpg', title: 'IRON MAN MARK XLIII', price: 399},
     { id: 1, image: 'Images/7-wolverine.jpg', title: 'WOLVERINE', price: 254},
@@ -14,6 +13,7 @@ const products = [
     { id: 7, image: 'Images/6-rey.jpg', title: 'REY', price: 342},
 ];
 
+// displaying each product
 let i = 0;
 document.getElementById('root').innerHTML = products.map((item) =>{
     var {image, title, price} = item;
@@ -29,6 +29,7 @@ document.getElementById('root').innerHTML = products.map((item) =>{
     );
 }).join('')
 
+// updating cart and quantity
 var cart = [];
 
 function addToCart(a){
@@ -44,11 +45,13 @@ function addToCart(a){
     displayCart();
 }
 
+// delecting elemnt from the cart
 function delElement(a){
     cart.splice(a, 1);
     displayCart();
 }
 
+// displaying cart
 function displayCart(a){
     let j = 0, total = 0;
     const cartItemContainer = document.getElementById('cartItem');
@@ -83,10 +86,10 @@ function displayCart(a){
         `;
     }
 
+    // disabling the checkout buttton if there are no items in the cart
     const checkoutButton = document.getElementById('checkout');
     const checkoutLink = document.getElementById('checkoutLink');
 
-    // disabling the checkout buttton if there are no items in the cart
     if(cart.length === 0){
         checkoutButton.classList.add('disabled');
         checkoutLink.removeAttribute('href');
@@ -101,6 +104,7 @@ function displayCart(a){
     }
 }
 
+// appending parameters to the URL
 function redirectToCheckout(){
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
@@ -112,11 +116,10 @@ function redirectToCheckout(){
 
     const nItems = cart.length;
     const checkoutLink = document.getElementById('checkoutLink');
-    checkoutLink.href = `/checkout.html?name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&subtotal=${encodeURIComponent(subtotal)}&nItems=${encodeURIComponent(nItems)}`;
+    checkoutLink.href = `C:/DANINDU/LECTURES/UoW%20Modules/Semester%202/Web/Coursework/coursework/Student%201/checkout.html?name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&subtotal=${encodeURIComponent(subtotal)}&nItems=${encodeURIComponent(nItems)}`;
 }
 
 // pop up behaviour of the sidebar
-
 const overlay = document.getElementById('overlay');
 const sidebar = document.getElementById('sidebar');
 const chechoutButton = document.getElementById('checkout');
@@ -142,3 +145,4 @@ sidebar.addEventListener('click', function(event){
 
 displayCart();
 hideSidebar();
+
