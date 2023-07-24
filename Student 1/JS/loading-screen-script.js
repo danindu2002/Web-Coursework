@@ -12,7 +12,4 @@ window.addEventListener("load", () => {
             document.body.removeChild(loader);
         });
     }, 4000);
-});
-
-
-  
+});  
