@@ -1,0 +1,258 @@
+
+html{
+    scroll-behavior: smooth;
+    
+}
+body{
+    background: url("images/gallery-bac.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+   
+}
+
+
+span{
+    color: rgb(93, 181, 105);
+    font-size: larger;
+}
+
+h1{
+    color: #fcfcfc;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position:relative;
+    display: inline;                       /*to get in the same line*/
+    
+}
+
+.nav-box{
+    
+    display: flex;
+    justify-content:center;
+    background-color: rgb(0, 0, 0,0.8);
+    
+ 
+}
+
+.navbar{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    margin: 0;
+    padding:0;
+    
+}
+
+.navbar li{
+    padding: 0 20px;
+    display: inline;
+    
+}
+    
+.navbar li a{
+    font-size: 24px;
+    text-decoration: none;
+    color:aliceblue;
+    
+}
+
+.navbar li a:hover{
+    color: rgb(42, 105, 105);
+}
+
+
+
+.font-size {
+    overflow: hidden;        /*to float*/
+    padding: 20px;
+    position:relative;           
+    /* display: flex; */
+    /* flex-direction: row; */
+    margin-top: 32px;
+    
+   
+}
+.small{
+    font-size: small;
+}
+.medium{
+    font-size: medium;
+
+}
+.large{
+    font-size: large;
+
+}
+
+button{
+    margin: 1.5px;
+    float:right; 
+    cursor: pointer;
+                     
+}
+
+.color-pick{
+    float: right;
+}
+input[type=color]{
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    
+    margin-left: 5px;
+    margin-top: -10px;
+    cursor: pointer;
+
+    
+}
+
+.color-change button{
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    border-color: black;
+    cursor: pointer;
+}
+
+.color1{
+    background-color: #575353;
+}
+
+.color2{
+    background-color: #384e3c;
+    
+}
+.color3{
+    background-color: #0a3547;
+    
+}
+
+
+.img-container{
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    max-width: max-content;
+    width: 100%;
+    justify-content: center;
+
+}
+.img-container img {
+width: 350px;
+padding: 6px;
+border-radius: 15px;
+
+}
+
+h2{
+text-align: left;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: #ffffff;
+padding-left: 20px;
+}
+
+.gallery{
+    display: inline-block;   /*check*/
+    
+}
+
+.text-box{
+    visibility: hidden;
+    position: fixed;
+    width: 65%;
+    height: fit-content;
+    color: #0e400d;
+   
+    
+    
+
+}
+
+.gallery:hover .text-box{
+    width: 50%;
+    top:33%;
+    left: 30%;
+    right: 50%;
+    visibility: visible;
+    position: fixed;
+    border: 4px #ffffff solid;
+    background-color: rgba(7, 54, 60, 0.65);
+    color: #e4c733;
+    transition:  1.5s ease-in-out;    
+   
+}
+
+.text-box img{
+    width: 60%;
+    float: right;
+    padding-top: 20px;
+    margin-bottom: -3px;
+    
+}
+
+.text-box h2{
+    text-align: center;
+    color: #fdfaff;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  
+}
+.text-box p{
+    color: #FFFDD0;
+    font-weight: bolder;
+    margin-left: 5px;
+ 
+}
+
+.text-box h3{
+    color : rgb(181, 165, 73);
+    padding-left: 5px;
+   
+    
+}
+.text-box .director{
+    margin-top: -20px;
+    color: #ffffff;
+    padding-left: 20px;
+}
+
+.gallery:hover .main-img{
+    opacity: 0.25;
+    
+}
+
+footer a{
+    text-decoration: none;
+    padding: 5px;
+    color: #000;
+    
+}
+footer p{
+    text-align: center;
+    border: 3px solid #ffffff ;
+    display: inline;
+    background-color: rgba(169, 146, 117, 0.774);
+    margin: 20px;
+    border-radius: 4px;
+    font-size: large;
+    
+}
+footer{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+footer a:hover{
+    font-weight: bold;
+}
+
+
+
+
+
+
+

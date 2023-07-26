@@ -1,0 +1,58 @@
+CSS
+/* ----------------------------------header below-------------------------------- */
+header {
+    position: fixed;
+    width: 100%;
+    left: 0; /*making navbar to the left removing small gap */
+    top: 0; /*making navbar to the top removing small gap */
+    z-index: 2;/*only used in main page to make navbar to top over slider*/
+}
+
+#nav {
+    margin: 0;
+    background-color: #333;
+    text-align: right;
+}
+
+#nav li {
+    display: inline-block;
+    text-align: center;
+    font-size: x-large; /*font size*/
+    font-family: serif;
+    padding: 8px 16px; /* size of the nav bar*/
+}
+
+#nav li a {
+    color: inherit; /*make link color to parent color*/
+    text-decoration: none; /*remove underline*/
+}
+
+#nav li {
+    color: goldenrod;
+}
+
+#nav li:hover { /*change color when hovering*/
+    color: gold;
+    background-color: #111;
+}
+
+.active { /*show current nav tab*/
+    background-color: #111;
+    border-bottom: 4px solid gold;
+}
+
+/* ----------------------------------------header above------------------------------------------- */
+
+HTML
+
+<header>
+            <ul id="nav">
+                <li class="active"><a href="#h">Home</a></li>
+                <li><a href="comments.html">Comments</a></li>
+                <li><a href="#s">Shop</a></li>
+                <li><a href="#q">Quiz</a></li>
+                <li><a href="#g">Gallery</a></li>
+                <li><a href="#m">Site Map</a></li>
+                <li><a href="#a">About Us</a></li>
+            </ul>
+</header>

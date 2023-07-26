@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="icon" href="images/title-logo.png" type="image/png">
+
+    <title>Gallery</title>
+</head>
+<body>
+    <header>
+        <ul id="nav">
+            <li><a href="../Student-2/home.html">Home</a></li>
+            <li><a href="../Student-2/comments.html">Comments</a></li>
+            <li><a href="../Student 1/shop.html">Shop</a></li>
+            <li><a href="../Student 3/Quiz.html">Quiz</a></li>
+            <li class="active"><a href="Gallery.html">Gallery</a></li>
+            <li><a href="sitemap.html">Site Map</a></li>
+            <li><a href="../Student 3/StudentD.html">About Us</a></li>
+        </ul>
+    </header>
+
+
+    <div class="font-size">
+        <h1><span>G</span>allery</h1>
+        
+        <button class="small">A</button>
+        <button class="medium">A</button>
+        <button class="large">A</button>
+        <div class="color-change">
+            <input type="color" id="pickColor" class="color-pick">
+            <button class="color1" id="change" onclick="document.body.style.background= '#575353'"></button>
+            <button class="color2" id="change" onclick="document.body.style.background= '#384e3c'" ></button>
+            <button class="color3" id="change"  onclick="document.body.style.background= '#0a3547'"></button>
+
+        </div>
+        
+        
+    </div>
+
+    <script>
+        const smallBut = document.querySelector('.small');
+        const mediumBut = document.querySelector('.medium');
+        const largeBut = document.querySelector('.large');
+
+        const pickColor = document.getElementById('pickColor');
+
+        function randomColorChange(){
+            document.body.style.background = pickColor.value;
+        }
+
+        pickColor.addEventListener('input', randomColorChange);
+
+        smallBut.addEventListener('click',function(){
+            document.body.style.fontSize = 'small';
+        });
+        mediumBut.addEventListener('click',function(){
+            document.body.style.fontSize = 'medium';
+        });
+        largeBut.addEventListener('click',function(){
+            document.body.style.fontSize = 'large';
+        });
+
+        
+
+
+    </script>
+
+    
+    
+    <div class="nav-box">
+        <ul class="navbar">
+            <li><a href="#action">Action</a></li>
+            <li><a href="#sci">Sci-Fi </a></li>
+            <li><a href="#fantacy">Fantasy</a></li>
+            <li><a href="#anime">Animation</a></li>
+        </ul>
+    </div>
+
+
+    <h2 id="action" class="header">Action:</h2>
+
+    <div class="img-container">
+        <div class="gallery">   
+            <img src="images\fastx.jpg" alt="fast" class="main-img"> 
+            <div class="text-box">
+                <img src="images\fastx.jpg" alt="fast">
+                <h2>Fast X</h2>
+                <h3 >Director:</h3>
+                <p class="director"><code>Louis Leterrier</code></p>
+                <p>
+                    In its third decade and still going strong with the same core cast and characters as when it started, Fast X, the tenth 
+                    installment in the Fast and Furious Saga, ushers in the closing chapters of one of cinema's most legendary and well-liked 
+                    global series. Dom Toretto (Vin Diesel) and his family have outsmarted, out-nerved, and out-driven every adversary in their 
+                    way over numerous missions and against insurmountable odds. They now face the deadliest foe they've ever encountered.
+                
+                </p>
+
+            </div>
+        </div>
+
+        <div class="gallery">  
+            <img src="images\mi.jpg" alt="mi" class="main-img">
+            <div class="text-box">
+                <img src="images\mi.jpg" alt="mi">
+                <h2>Mission Impossible (Rogue Nation)</h2>
+                <h3 >Director:</h3>
+                <p class="director"><code>Christopher McQuarrie</code></p>
+                
+                <p>
+                    The fifth film in the Mission: Impossible film franchise. Tom Cruise plays the lead role.<br><br>
+
+                    Hunley  of the CIA persuades a Senate committee to dissolve the IMF (Impossible Mission Force), 
+                    of which Ethan Hunt ( Tom Cruise) is a major member. Hunley believes the IMF is too risky. Now 
+                    on his own, Hunt pursues the Syndicate, a shady and deadly renegade organization.
+
+                </p>
+            </div>
+        </div> 
+
+        <div class="gallery">  
+            <img src="images\topgun.jpg" alt="top gun" class="main-img">
+            <div class="text-box">
+                <img src="images\topgun.jpg" alt="top gun">
+                <h2>Top Gun (Maverick)</h2>
+                <h3 >Director:</h3>
+                <p class="director"><code>Joseph Kosinski</code></p>
+                <p>
+                    Top Gun: Maverick is an American action drama film released in 2022 featuring Tom Cruise as naval aviator Maverick.<br><br>
+
+                    It follows Maverick's return to the United States Navy Strike Fighter Tactics Instructor program (also known as U.S. 
+                    Navy-Fighter Weapons School - "TOPGUN"), where he must confront his past while training a group of younger pilots, 
+                    including the son of Maverick's deceased best friend Lieutenant Nick "Goose" Bradshaw.
+                </p>
+            </div>
+        </div> 
+
+        <div class="gallery">   
+            <img src="images\deadpool.jpg" alt="dead pool" class="main-img">
+            <div class="text-box">
+                <img src="images\deadpool.jpg" alt="dead pool">
+                <h2>Deadpool</h2>
+                <h3 >Director:</h3>
+                <p class="director"><code>Tim Miller</code></p>
+                <p>
+                    Deadpool is a 2016 American superhero film based on the same-named Marvel Comics character. It is a spin-off in 
+                    the X-Men film franchise, distributed by 20th Century Fox.<br><br>
+
+                    This is the origin narrative of Wade Wilson, a former Special Forces operator turned mercenary who adopts the 
+                    alter name Deadpool after being subjected to a rogue experiment that leaves him with fast healing powers. Deadpool 
+                    seeks after the man who nearly destroyed his life, armed with his new talents and a nasty, twisted sense of humour.
+                </p>
+
+            </div>
+        </div> 
+
+    </div>
+       
+    <h2 id="sci">Sci-Fi:</h2>
+
+    <div class="img-container">
+        <div class="gallery"> 
+            <img src="images\interstellar.jpg" alt="interstellar" class="main-img" >
+            <div class="text-box">
+                <img  src="images\interstellar.jpg" alt="interstellar">
+                <h2>Interstellar</h2>
+                <h3 >Director:</h3>
+                <p class="director"><code>Christopher Nolan</code></p>
+                <p>
+                    The epic science fiction film Interstellar was released in 2014.Matthew McConaughey, Anne Hathaway, Jessica 
+                    Chastain, Bill Irwin, Ellen Burstyn, Matt Damon, and Michael Caine feature in the film.<br><br> 
+
+                    Disasters, famines, and droughts have plagued Earth's future. Interstellar travel is the only method to assure 
+                    humanity's survival. A newly found wormhole in our solar system permits a team of astronauts to go to a planet 
+                    where no one has gone before, a planet that may have the perfect climate to sustain human life.
+
+                </p>
+                
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="images\arrival.jpg" alt="arriaval" class="main-img">
+            <div class="text-box">
+                <img src="images\arrival.jpg" alt="arriaval">
+                <h2>Arrival</h2>
+                <h3 >Director:</h3>
+                <p class="director"><code>Denis Villeneuve</code></p>
+                <p>
+                    Arrival is a science fiction drama film released in 2016.Amy Adams plays Louise Banks in the film.<br><br>
+
+                    When massive spaceships crash-land at 12 different locations around the planet, linguistics professor 
+                    Louise Banks leads an elite team of investigators. As the world prepares for war, Banks and her crew must 
+                    race against the clock to find a way to communicate with the extraterrestrial visitors. In order to solve 
+                    the enigma, she takes a risk that could endanger her life and possibly the entire human race.
+                </p>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="images\martian.jpg" alt="martian" class="main-img">
+            <div class="text-box">
+                <img src="images\martian.jpg" alt="martian">
+                <h2>The Martian</h2>
+                <h3 >Director:</h3>
+                <p class="director"><code>Ridley Scott</code></p>
+                <p>
+                    The Martian is a 2015 science fiction film and starring Matt Damon.<br><br>
+
+                    Astronaut Mark Watney is assumed dead after being left behind by his crew during a manned mission 
+                    to Mars. Watney, on the other hand, has survived and is now stranded and alone on the inhospitable 
+                    planet. With few resources, he must rely on his resourcefulness, intelligence, and spirit to survive 
+                    and find a way to communicate with Earth. NASA and a multinational team of scientists work feverishly 
+                    to bring "the Martian" home, while his crewmates plan a daring, if not impossible, rescue attempt. As 
+                    these extraordinary stories of bravery surface, the globe comes together to pray for Watney's safe return.
+
+                </p>
+            </div>
+
+        </div>
+
+        <div class="gallery"> 
+            <img src="images\Chappie.jpg" alt="chappie" class="main-img">
+            <div class="text-box">
+                <img src="images\Chappie.jpg" alt="chappie">
+                <h2>Chappie</h2>
+                <h3 >Director:</h3>
+                <p class="director"><code>Neill Blomkamp</code></p>
+                <p>
+                    Chappie is a 2015 American dystopian science fiction action film.<br><br>
+
+                    Tetravaal Company's robots are used by the police department in Johannesburg to lower crime rates. 
+                    Deon Wilson, an engineer who created Moose, is jealous of Deon's AI endeavor. Chappie, a wounded 
+                    robot, is kidnapped by Deon and made to rob banks. Chappie is requested by the crooks Ninja, Yo-Landi, 
+                    and America to halt the robot police. Chappie needs instruction to develop, as Vincent hatches a cunning 
+                    plan to turn on his robot.
+
+                </p>
+            </div>
+        </div>
+
+    </div>
+       
+    <h2 id="fantacy">Fantasy:</h2>
+    <div class="img-container">
+        <div class="gallery">
+            <img src="images\LOR.jpg" alt="loard of the rings" class="main-img">
+            <div class="text-box">
+                <img src="images\LOR.jpg" alt="loard of the rings">
+                <h2>Lord Of The Rings 1</h2>
+                <h3 >Director:</h3>
+                <p class="director"><code>Peter Jackson</code></p>
+                <p>
+                    Based on the 1954 book The Fellowship of the Ring, the epic fantasy adventure movie The Lord of the Rings: 
+                    The Fellowship of the Ring was released in 2001.<br><br>
+
+                    Gandalf has located a lost Ring, the One Ring of the Dark Lord Sauron. To destroy the Ring, Frodo must set 
+                    out on an epic journey with Gandalf, Legolas, Gimli, Aragorn, Boromir, and his friends Merry, Pippin, and 
+                    Samwise, while overcoming several difficulties and perils. The Dark Lords' rule can only be ended if they 
+                    succeed in their mission.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="images\avatar.jpg" alt="avatar" class="main-img">
+            <div class="text-box">
+                <img src="images\avatar.jpg" alt="avatar">
+                <h2>Avatar</h2>
+                <h3 >Director:</h3>
+                <p class="director"><code>James Cameron</code></p>
+                <p>
+                    Avatar is a epic science fiction film starring Sam Worthington, Zoe Saldana, Stephen Lang, Michelle
+                     Rodriguez, and Sigourney Weaver.<br><br>
+
+                    Jake Sully undertakes a mission on Pandora, where he discovers Parker Selfridge's avaricious plans to 
+                    mine for the Na'vi, a local humanoid. Jake learns about the Indigenous Race and culture for a military 
+                    force lead by Colonel Quaritch in exchange for spinal surgery. Using a "avatar" identity, he infiltrates 
+                    the Na'vi. Jake develops a bond with the tribe and falls in love with Neytiri, but the Colonel's 
+                    extermination techniques push Jake to take a stand and fight for Pandora's survival.
+                </p>
+
+            </div>
+        </div>
+        <div class="gallery">
+            <img src="images\Harry-Potter.jpg" alt="Harry Potter" class="main-img">
+            <div class="text-box">
+                <img src="images\Harry-Potter.jpg" alt="Harry Potter">
+                <h2>Harry Potter(the Goblet of Fire)</h2>
+                <h3 >Director:</h3>
+                <p class="director"><code>Mike Newell</code></p>
+                <p>
+                    Harry Potter and the Goblet of Fire is a fantasy film released in 2005.J.K. Rowling's 2000 novel 
+                    of the same name inspired the film.Daniel Radcliffe plays Harry Potter in the film.<br><br>
+
+                    Harry begins his fourth year at Hogwarts with a summer break with friends. After the Quidditch 
+                    World Cup Final, persons dressed as Lord Voldemort's "Death Eaters" set fire to tents and 
+                    Voldemort's emblem, the "Dark Mark," sparking mayhem in the magical world. The "Triwizard 
+                    Tournament," a magical tournament between Hogwarts, Beauxbatons, and Durmstrang schools, 
+                    is held at Hogwarts. The candidates are chosen by the Goblet of Fire, a magical artefact, 
+                    but Harry is chosen as the Fourth Champion. Harry, unaware of the magic's potency, must 
+                    complete three difficult tasks.
+
+                </p>
+            </div>
+         </div>
+
+        <div class="gallery">
+            <img src="images\jumanji.jpg" alt="jumanji" class="main-img">
+            <div class="text-box">
+                <img src="images\jumanji.jpg" alt="jumanji">
+                <h2>Jumanji (Welcome to the Jungle)</h2>
+                <h3 >Director:</h3>
+                <p class="director"><code>Jake Kasdan</code></p>
+                <p>
+                    The 2017 American fantasy adventure comedy film Jumanji: Welcome to the Jungle.Dwayne 
+                    Johnson, Jack Black, Kevin Hart, Karen Gillan, and Nick Jonas star.<br><br>
+
+                    In Jumanji, four high school students find an outdated video game system and transform 
+                    into adult avatars. To escape and return to the real world, they must survive the game, 
+                    uncover Alan Parrish's legacy, and modify their self-perception. They must adjust their 
+                    thinking or they will be locked in the game, playing by others for the rest of their lives.
+
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <h2 id="anime">Animation:</h2>
+    <div class="img-container">
+        <div class="gallery">
+            <img src="images\minion.jpg" alt="minion" class="main-img">
+            <div class="text-box">
+                <img src="images\minion.jpg" alt="minion">
+                <h2>Minions</h2>
+                <h3 >Director:</h3>
+                <p class="director"><code>Pierre Coffin</code></p>
+                <p>
+                    Minions is a 2015 computer-animated comedy film released in the United States.Illumination 
+                    Entertainment produced the film, which was released by Universal Pictures.<br><br>
+
+                    The Minions have existed from the beginning of time to serve the most loathsome of 
+                    lords. The easily distracted tribe has aided the largest and worst of baddies, from 
+                    the T-Rex to Napoleon. Join Kevin, the protective leader, Stuart, the young rebel, and 
+                    endearing little Bob on a global road trip. They'll win the opportunity to work for a new 
+                    boss, the world's first female supervillain, and attempt to preserve Minionkind from extinction.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="images\httyd.jpg" alt="dragon" class="main-img">
+            <div class="text-box">
+                <img src="images\httyd.jpg" alt="dragon">
+                <h2>How to Train Your Dragon 2</h2>
+                <h3 >Director:</h3>
+                <p class="director"><code>Dean DeBlois</code></p>
+                <p>
+                    How to Train Your Dragon 2 is a 2014 American computer-animated action fantasy film largely based on 
+                    the book series of the same name.<br><br>
+
+                    Hiccup and Toothless embark on a voyage through the skies five years after reconciling dragons and 
+                    vikings on Berk Island, discovering new planets and competing in dragon races. They uncover a secret ice 
+                    cave inhabited by hundreds of wild dragons and the enigmatic Dragon Rider, sparking a battle to preserve 
+                    peace. Hiccup and Toothless must band together to fight for their values and change the fates of men and dragons.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="images\spider-man.jpg" alt="spider man" class="main-img" class="main-img"> 
+            <div class="text-box">
+                <img src="images\spider-man.jpg" alt="spider man">
+                <h2>Spider-Man: Into the Spider-Verse</h2>
+                <h3 >Director:</h3>
+                <p class="director"><code>Bob Persichetti</code></p>
+                <p>
+                    Spider-Man: Into the Spider-Verse is a computer-animated superhero film released in 2018. 
+                    Spider-Man from Marvel Comics is shown.It was the Spider-Man franchise's first animated film.<br><br>
+
+                    The creative brains behind The Lego Movie and 21 Jump Street, Phil Lord and Christopher 
+                    Miller, bring their distinctive talents to a fresh vision of a reimagined Spider-Man Universe, 
+                    with a pioneering visual style that is the first of its kind. "Spider-Man(TM): Into the Spider-Verse" 
+                    introduces Brooklyn youngster Miles Morales (Shameik Moore) and the Spider-Verse's boundless possibilities, 
+                    where more than one person can wear the mask.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="images\crooda.jpg" alt="croods" class="main-img">
+            <div class="text-box">
+                <img src="images\crooda.jpg" alt="croods">
+                <h2>The Croods</h2>
+                <h3 >Director:</h3>
+                <p class="director"><code>Kirk DeMicco</code></p>
+                <p>
+                    DreamWorks Animation's 2013 computer-animated adventure comedy picture The Croods is 
+                    distributed by 20th Century Fox.<br><br>
+
+                    The Croods are an odd family of cavemen that survive the tough terrain by following a rigid 
+                    set of rules. When their home is destroyed in the aftermath of an imminent tragedy known as 
+                    "The End," they are forced to flee into the wilderness of the unknown in search of a new home.
+
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>
+        <a href="Page-Editor.html">Page Editor</a>
+        </p>
+        <p>
+            <a href="#">TOP </a>
+        </p>
+    
+    </footer>
+   
+   
+</body>
+</html>

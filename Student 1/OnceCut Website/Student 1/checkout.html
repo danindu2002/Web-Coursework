@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Checkout</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--external stylesheet-->
+		<link rel="stylesheet" href="CSS/checkout-styles.css">
+
+         <!--external stylesheet for the main navbar-->
+		<link rel="stylesheet" href="CSS/main-navbar.css">
+
+        <!-- page icon -->
+		<link rel="icon" href="logo/title-logo.png" type="image/png">
+    </head>
+    <body>
+        <!-- Main page navigation Bar -->
+        <header>
+            <ul id="nav">
+                <li><a href="../Student-2/home.html">Home</a></li>
+                <li><a href="../Student-2/comments.html">Comments</a></li>
+                <li class="active"><a href="shop.html">Shop</a></li>
+                <li><a href="../Student 3/Quiz.html">Quiz</a></li>
+                <li><a href="../Student4/Gallery.html">Gallery</a></li>
+                <li><a href="../Student4/sitemap.html">Site Map</a></li>
+                <li><a href="../Student 3/StudentD.html">About Us</a></li>
+            </ul>
+        </header>
+
+        <!-- order summary section -->
+        <div class="wrapper" style="margin-top: 10%;">
+            <h2>Checkout</h2>
+            <form id="form-cart">
+                <section class="order-sum">
+                    <h4 class="form-title">Order Summary</h4>
+                    <p class="cart-checkout">Reference ID <span id="ref-no">10001</span></p>
+                    <p class="cart-checkout">Amount of items in the cart <span id="cart-count"></span></p>
+                    <p class="cart-checkout">Subtotal<span id="sub-total"></span></p>
+                    <p class="cart-checkout">Express Delivery <span id="deli-fee">$20</span></p>
+                    <hr style="border: 1px solid #5d5d5d; margin: 12px 0;">
+                    <p class="cart-checkout">Total Bill Amount <span id="bill-amount">$0</span></p>
+                </section>
+            </form>
+        </div>
+
+        <!-- payment section -->
+        <div class="wrapper" style="margin-top: 1rem;">
+            <form id="form-payment" method="get">
+                <section class="payment-details">
+                    <h4>Payment Details - Credit / Debit Card</h4><br>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="tel" class="name" placeholder="Card Number 5321-2202-5873-2404" required
+                                id="cnumber">
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="text" placeholder="Name on Card" required class="name" id="cname">
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="tel" class="name" placeholder="CVV 112" required id="cvc">
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <div class="input_box">
+                                <input type="text" placeholder="Exp Month" required class="name" id="expmonth">
+                            </div>
+                        </div>
+                        <div class="input_box">
+                            <input type="text" placeholder="Exp Year" required class="name" id="expyear">
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <button type="submit" id="btn_payment">Confirm Payment</button>
+                        </div>
+                    </div>
+                </section>
+            </form>
+
+            <a href="#" id="form-link" style="text-decoration: none; text-align: center;">Edit Details</a>
+            
+            <!-- edit details pop -->
+            <form id="form-billing" style="display: none;" method="get">
+                <h4 class="form-title">Billing Address</h4>
+                <div class="input_group">
+                    <div class="input_box">
+                        <input type="text" placeholder="Name" required class="name" id="fname">
+                    </div>
+                </div>
+                <div class="input_group">
+                    <div class="input_box">
+                        <input type="tel" placeholder="Contact No." required class="name" id="contact">
+                    </div>
+                </div>
+                <div class="input_group">
+                    <div class="input_box">
+                        <input type="email" placeholder="Email Address" required class="name" id="email">
+                    </div>
+                </div>
+                <div class="input_group">
+                    <div class="input_box">
+                        <input type="text" placeholder="Address" required class="name" id="address">
+                    </div>
+                </div>
+                <div class="input_group">
+                    <div class="input_box">
+                        <select id="province" required class="name">
+                            <option value="" disabled selected style="display:none;">Province</option>
+                            <option value="western">Western </option>
+                            <option value="eastern">Eastern </option>
+                            <option value="southern">Southern </option>
+                            <option value="nothern">Northern </option>
+                            <option value="north-western">North Western </option>
+                            <option value="north-central">North Central </option>
+                            <option value="uva">Uva </option>
+                            <option value="sabaragamuwa">Sabaragamuwa </option>
+                            <option value="central">Central </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input_group">
+                    <div class="input_box">
+                        <h4 class="form-title">Date Of Birth</h4>
+                        <input type="text" placeholder="DD" required class="dob" id="day">
+                        <input type="text" placeholder="MM" required class="dob" id="month">
+                        <input type="text" placeholder="YYYY" required class="dob" id="year">
+                    </div>
+                    <div class="input_box">
+                        <h4 class="form-title">Gender</h4>
+                        <input type="radio" name="gender" class="radio" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" class="radio" id="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="input_group">
+                    <div class="input_box">
+                        <button type="submit" id="btn_change">Submit Changes</button>
+                    </div>
+                </div>
+                <div class="input_group">
+                    <div class="input_box">
+                        <button type="reset" id="btn_reset">Reset Changes</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <a href="page-editor-student1.html" id="page-editor">Page Editor</a>
+
+        <!--external script file-->
+		<script src="JS/checkout-script.js"></script>
+    </body>
+</html>

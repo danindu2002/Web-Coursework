@@ -1,0 +1,109 @@
+
+body{
+	height: 100%;
+	font: 1em sans-serif;
+	position: (absolute);
+    top:6vh;
+    background-image:url(Img/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+ 
+}
+	
+#slider-image{
+	width: 100%;
+	height: 400px;
+}
+
+#one{
+	text-align:center;
+	font-family: sans-serif
+}
+
+#about1{
+	background-color: #dfeaf754
+    
+}
+
+#projects{
+	margin: auto;
+	width: 85%;
+}
+
+#images{
+	width: 350px;
+	height: 200px;
+}
+
+
+#Apart1{
+	background-color: #d9dbdf94;
+}
+
+#Apart2{
+	background-color: #ffffffa2;
+}
+
+#topic1{
+	background-color: #002e66b4
+    
+    
+    
+}
+
+#topic2{
+	margin: auto;
+	width: 85%;
+}
+
+#Editor{
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    font-size: 25px;
+
+    }
+
+/* ----------------------------------header below-------------------------------- */
+header {
+    position: fixed;
+    width: 100%;
+    left: 0; /*making navbar to the left removing small gap */
+    top: 0; /*making navbar to the top removing small gap */
+    z-index: 2;/*only used in main page to make navbar to top over slider*/
+}
+
+#nav {
+    margin: 0;
+    background-color: #333;
+    text-align: right;
+}
+
+#nav li {
+    display: inline-block;
+    text-align: center;
+    font-size: x-large; /*font size*/
+    font-family: serif;
+    padding: 8px 16px; /* size of the nav bar*/
+}
+
+#nav li a {
+    color: inherit; /*make link color to parent color*/
+    text-decoration: none; /*remove underline*/
+}
+
+#nav li {
+    color: goldenrod;
+}
+
+#nav li:hover { /*change color when hovering*/
+    color: gold;
+    background-color: #111;
+}
+
+.active { /*show current nav tab*/
+    background-color: #111;
+    border-bottom: 4px solid gold;
+}
+
+

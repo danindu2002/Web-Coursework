@@ -1,0 +1,266 @@
+/* --------- Top Rated Movies stylesheet ----------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background: linear-gradient(to bottom,#303030 30%,#69837e);
+}
+
+.container .cart{
+    display: flex;
+    position: fixed;
+    bottom: 89%;
+    right: 3%;
+    align-items: center;
+    z-index: 5;
+}
+.container .cart p{
+    color: #cccccc;
+    font-size: 22px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;
+}
+#cart-icon{
+    transform: scale(1.5);
+    color: rgba(53,194,168);
+}
+#trash-icon{
+    position: relative;
+    right: 49px;
+    bottom: 28px;
+    color: rgba(53,194,168);
+}
+
+.main-img{
+    width: 250px;
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+}
+
+.container{
+    margin-left: 9%;
+    margin-right: 9%;
+}
+.container .heading{
+    font-family: 'Poppins',sans-serif;
+    margin-top: 3%;
+    padding-top: 6vh;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 2px;
+    margin-bottom: 0px;
+    color: rgba(53,194,168);
+    text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+}
+.container .subHeading{
+    font-family: 'Poppins',sans-serif;
+    margin-left: 1.5%;
+    margin-top: 0px;
+    margin-bottom:60px;
+    letter-spacing: 4px;
+    background-color: rgba(111,158,149,0.6);
+    backdrop-filter: blur(4px);
+    font-size: 20px;
+    text-align: center;
+}
+.box-container .box .btn{
+    font-family: 'Poppins',sans-serif;
+    position: relative;
+    left: 128px;
+    margin-bottom: 50px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgba(53,194,168);
+    font-size: 15px;
+    -webkit-text-stroke: 0.5px;
+    border-radius: 5px;
+    padding: 6px 18px;
+    transition: 0.1s ease-in;
+}
+.main-img:hover{
+    transform: scale(1.02);
+    padding: 1px;
+    border: 2px solid rgba(53,194,168);
+}
+
+.box-container .box .btn:hover, .checkout:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: 2px solid rgba(53,194,168);
+}
+.name{
+    font-family: 'Poppins',sans-serif;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.price{
+    font-family: 'Poppins',sans-serif;
+    width: fit-content;
+    padding: 0%;
+    margin:0%;
+    color: #cccccc;
+}
+.price:hover{
+    color: #000000;
+}
+
+.head{
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    background-color: #303030;
+    border-radius: 10px;
+    height: 40px;
+    padding: 1px 25px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: white;
+    justify-content: left;
+    align-items: center;
+}
+.foot{
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 7%;
+    gap: 150px;
+    align-items: center;
+    padding: 10px 20px;
+    border-top: 1px solid #303030;
+    background-color: transparent;
+}
+.checkout{
+    font-family: 'Poppins',sans-serif;
+    position: fixed;
+    top: 77%;
+    right: 35%;
+    background-color: rgba(53,194,168);
+    font-size: 15px;
+    -webkit-text-stroke: 0.5px;
+    border-style: none;
+    border-radius: 5px;
+    padding: 6px 18px;
+    transition: 0.1s ease-in;
+}
+.box-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#root{
+    margin: 0% 14.8%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    grid-gap: 0px 200px;
+}
+.sidebar{
+    z-index: 3;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    width: 20%;
+    height: 100%;
+    background-color: rgba(111,158,149,0.6);
+    backdrop-filter: blur(4px);
+    padding: 25px 25px;
+    text-align: center;
+    overflow-y: hidden;
+}
+.cart-item-container{
+    max-height: 366px;
+    overflow-y: auto;
+}
+.cart-item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.row-img{
+    height: 75px;
+}
+.rowImg{
+    position: relative;
+    top: 20px;
+    right: 100px;
+    border-radius: 5px;
+    max-width: 60px;
+}
+#cart-icon:hover, #trash-icon:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    color: black;
+
+}
+.cart-name{
+    font-size: 15px;
+    display: flex;
+    position: absolute;
+    margin-left: 95px;
+    top: 22px;
+}
+.cart-price{
+    font-size: 15px;
+    position: relative;
+    margin-left: 96px;
+    right: 72px;
+    bottom: 30px;
+}
+.overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.disabled{
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.container2 .sidebar .details{
+    position: fixed;
+    bottom: 25%;
+    width: 280px;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction:column ;
+    font-size: 14px;
+
+}
+#name ,#email{
+    border-radius: 50px;
+    margin-bottom: 4px;
+    padding: 4px;
+    padding-left: 15px;
+    border: none;
+}
+
+#page-editor{
+    position: absolute;
+    left: 47%;
+    text-decoration: none;
+    background-color: rgb(34, 109, 167,0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}

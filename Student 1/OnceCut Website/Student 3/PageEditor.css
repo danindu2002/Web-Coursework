@@ -1,0 +1,44 @@
+*{
+    font-family: sans-serif;
+}
+body {
+    position: (relative/fixed/absolute);
+    top:6vh;
+    background-image:url(Img/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+ 
+ }
+
+ .full-pg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+    
+  }
+  .border{
+    width: 50%;
+  }
+  
+  fieldset {
+    background-color: rgba(134, 134, 134, 0.349);
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+  }
+  legend {
+    font-weight: bold;
+  }
+  
+  h1 {
+    text-align: center;
+  
+
+ }
+

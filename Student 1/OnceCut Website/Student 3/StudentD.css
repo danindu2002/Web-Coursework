@@ -1,0 +1,171 @@
+*{
+margin: 0%;
+padding: 0%;
+font-family: sans-serif;
+}
+
+
+
+.logoimg{
+ position: absolute;
+bottom: 0%;
+left: 45%;
+}
+
+.container{
+justify-content: center;
+align-items: center;
+display: flex;
+height: 100vh;
+    
+    
+
+
+    
+}
+
+.StudentD{
+ display: flex;
+
+
+}
+
+img{
+height: 300px;
+width: auto;
+border-radius: 3%;
+    
+    
+
+}
+
+.Student{
+height: 500px;
+margin: 10px;
+box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.315); 
+overflow: hidden;
+}
+
+
+.introduc{
+height: 200px;
+height: 350px;
+padding: 6px;
+box-sizing: border-box;
+position: absolute;
+color: white;
+transition:.5s;
+
+}
+
+h1{
+margin: 10px;
+font-size: 30px;
+line-height: 1.5;
+
+}
+
+p{
+opacity: 0;    
+font-size: 20px;
+margin: 20px;
+visibility: hidden;
+
+}
+
+span{
+font-weight: bold;
+}
+
+.Student:hover{
+    cursor: pointer;
+}
+
+.Student:hover .introduc{
+height: 230px;
+bottom: 240px;
+background: rgba(0, 0, 0, 0.384);
+
+
+}
+ 
+.Student:hover p{
+opacity:1;
+visibility: visible;
+
+
+}
+
+#topic {
+
+position: absolute;
+top: 15%;
+left: 45%;
+font-size: 50px;
+  }
+
+
+
+body {
+background-image: url("Img/Background.jpg"); 
+background-size: cover; 
+background-repeat: no-repeat; 
+    
+    
+}
+
+#Editor{
+
+position: absolute;
+bottom: 0;
+left: 45%;
+font-size: 25px;
+
+}
+
+/* ----------------------------------nav bar-------------------------------- */
+header {
+    position: fixed;
+    width: 100%;
+    left: 0; /*making navbar to the left removing small gap */
+    top: 0; /*making navbar to the top removing small gap */
+    z-index: 2;/*only used in main page to make navbar to top over slider*/
+}
+
+#nav {
+    margin: 0;
+    background-color: #333;
+    text-align: right;
+}
+
+#nav li {
+    display: inline-block;
+    text-align: center;
+    font-size: x-large; /*font size*/
+    font-family: serif;
+    padding: 8px 16px; /* size of the nav bar*/
+}
+
+#nav li a {
+    color: inherit; /*make link color to parent color*/
+    text-decoration: none; /*remove underline*/
+}
+
+#nav li {
+    color: goldenrod;
+}
+
+#nav li:hover { /*change color when hovering*/
+    color: gold;
+    background-color: #111;
+}
+
+.active { /*show current nav tab*/
+    background-color: #111;
+    border-bottom: 4px solid gold;
+}
+
+
+
+
+

@@ -1,0 +1,210 @@
+/* --------- Top Rated Movies stylesheet ----------- */
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-image: url("../Images/top-rated-movies-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* navigation bar */
+.logo{
+  display: flex;
+  width: 10px;
+  height: 28px;
+  margin-right: 63%;
+  padding-top: 2px;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    display: inline-flex;
+    top: 5.9vh;
+    right: 0;
+    justify-content: right;
+    background-color: rgba(39, 39, 39, 0.75);
+    backdrop-filter: blur(3px);
+    width:100vw;
+    height: 5vh;
+  }
+  .navbar a{
+    color: rgb(145,145,145);
+    padding: 5px 25px;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-stretch: extra-expanded;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    transition: font-size 0.1s ease;
+  }
+  .navbar a:hover {
+    color: white;
+    font-size: 19px;
+  }
+  .navbar a:active1 {
+    color: rgb(53,194,168);
+  }
+  .navbar a.active1{
+    color:black;
+    background-color: rgba(53,194,168);
+    font-size: 19px;
+  }
+
+  /* Main topic */
+  .topicNum{
+    font-size: 120px;
+    -webkit-text-stroke: 2.5px;
+    position: absolute;
+    top: 15%;
+    left: 37%;
+    color: rgba(53,194,168);
+  }
+  .topicTxt1{
+    position: absolute;
+    top: 17.5%;
+    left: 41.5%;
+    color: rgb(211, 211, 211);
+    font-size: 51px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .topicTxt2{
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    font-size:33px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  /*Category*/
+  .sections{
+    position: relative;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 0.5px;
+    color: rgba(53,194,168);
+    padding: 12px;
+    padding-bottom: 5px;
+    margin-left: 4%;
+    width: max-content;
+    background-color: rgba(55, 55, 55, 0.5);
+    backdrop-filter: blur(6px);
+  }
+
+  /* Film blocks */
+  .filmBlock{
+    background-color: rgba(55, 55, 55, 0.5);
+    backdrop-filter: blur(6px);
+    flex-direction: column;
+    position: relative;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 1%;
+
+  }
+  .filmName{
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-text-stroke: 1px;
+    font-size: 41px;
+    padding-left: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: aliceblue;
+
+  }
+
+  .description p{
+    left: 50%;
+    top: 23%;
+    position: absolute;
+    padding-right: 10%;
+    text-align: justify;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    line-height: 30px;
+
+  }
+
+  img{
+    width: 400px;
+    position: relative;
+    display: flex;
+    padding-left: 10%;
+    padding-bottom: 3%;
+    transition: transform 0.4s ease;
+  }
+  img:hover{
+    transform: scale(1.04);
+  }
+
+  .rating{
+    left: 50%;
+    top: 18%;
+    position: absolute;
+    padding-right: 10%;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 0.5px;
+  }
+  .imdb{
+    color: rgb(245, 197, 24);
+    font-size: 21px;
+  }
+  .ratingNum{
+    padding-left: 12px;
+    font-size: 25px;
+    color: rgba(53,194,168);
+    transition: font-size 0.1s ease;
+  }
+  .ratingNum:hover{
+    color: rgb(255, 122, 27);
+    font-size: 28px;
+  }
+  .divider{
+    padding: 15px;
+    color: rgb(24, 24, 24);
+    font-weight: bold;
+  }
+
+  .cast{
+    left: 50%;
+    top: 68%;
+    position: absolute;
+    padding-right: 10%;
+    text-align: justify;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: white;
+    line-height: 30px;
+  }
+  .cast hr{
+    border: none;
+    border-top: 2.5px solid rgb(24, 24, 24);
+  }
+  .nameTags{
+    color: rgba(53,194,168);
+    font-weight: bold;
+    font-size: 19px;
+  }
+
+  #page-editor{
+    position: absolute;
+    left: 47%;
+    text-decoration: none;
+    background-color: rgb(34, 109, 167,0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}

@@ -1,0 +1,88 @@
+body{
+    background: url("images/sitemap-bac.jpeg") center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin: 0; */
+
+}
+
+
+
+span{
+    background-color: rgba(57, 45, 23,0.7);
+    border-radius: 8px;
+}
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: -1px;
+    font-size: 45px;
+
+}
+
+.svgmain{
+    background-color: rgba(63, 104, 108, 0.75);
+    border-radius: 20px;
+    position:static;
+    margin-top: 95px;
+} 
+
+
+line {
+    stroke: #ffffff;
+    stroke-width: 2.4;
+}
+
+
+.homeimg:hover image{
+    outline: auto;
+    outline-offset: -8px;
+}
+
+
+
+text{
+    font-size:14 ;
+    text-anchor: middle;
+    fill:bisque;
+}
+
+svg {
+   
+    background-color: rgba(39, 16, 16, 0.532);
+    margin: 80px;
+    margin-top: 0%;
+    margin-bottom: 10px;
+    width: max-content;
+    border-radius: 10px;
+   
+}
+
+footer a{
+    text-decoration: none;
+    padding: 5px;
+    color: #000;
+    
+    
+}
+footer p{
+    text-align: center;
+    border: 3px solid #ffffff ;
+    display: inline;
+    background-color: rgba(169, 146, 117, 0.774);
+    margin: 0px;
+    border-radius: 4px;
+    font-size: large;
+    
+    
+}
+footer{
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a:hover{
+    font-weight: bold;
+}

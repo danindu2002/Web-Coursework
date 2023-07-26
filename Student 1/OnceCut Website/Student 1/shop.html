@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Shop</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- external icons (NEEDS INTERNET CONNECTION TO LOAD) -->
+        <script src="https://kit.fontawesome.com/5aeec4cfa4.js" crossorigin="anonymous"></script>
+
+        <!--external stylesheet-->
+		<link rel="stylesheet" href="CSS/shop-styles.css">
+
+        <!--external stylesheet for the main navbar-->
+		<link rel="stylesheet" href="CSS/main-navbar.css">
+
+        <!-- page icon -->
+		<link rel="icon" href="logo/title-logo.png" type="image/png">
+    </head>
+    <body>
+        <!-- Main page navigation Bar -->
+        <header>
+            <ul id="nav">
+                <li><a href="../Student-2/home.html">Home</a></li>
+                <li><a href="../Student-2/comments.html">Comments</a></li>
+                <li class="active"><a href="shop.html">Shop</a></li>
+                <li><a href="../Student 3/Quiz.html">Quiz</a></li>
+                <li><a href="../Student4/Gallery.html">Gallery</a></li>
+                <li><a href="../Student4/sitemap.html">Site Map</a></li>
+                <li><a href="../Student 3/StudentD.html">About Us</a></li>
+            </ul>
+        </header>
+
+        <div class="container">
+            <div class="cart"><i id="cart-icon" class="fa-solid fa-cart-shopping"></i><p id="count" style="font-family: 'Poppins',sans-serif;">0</p></div>
+            <h1 class="heading">SHOP COLLECTIBLES</h1>
+            <h2 class="subHeading">HOT ACTION FIGURES</h2>
+        </div>
+
+        <div class="overlay" id="overlay"></div>
+
+        <!-- cart -->
+        <div class="container2">
+            <div id="root"></div>
+            <div class="sidebar" id="sidebar">
+                <div class="head"><p>My Cart</p></div>
+                <div id="cartItem" style="font-family: 'Poppins',sans-serif;">Your cart is empty</div>
+                <div class="details">
+                    <input type="text" placeholder="Name" id="name">
+                    <input type="email" placeholder="Email" id="email">
+                </div>
+                <div class="checkout" id="checkout">
+                    <a id="checkoutLink" href="" onclick="redirectToCheckout()" style="text-decoration: none; color: black;">Checkout</a>
+                </div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">$ 0.00</h2>
+                </div>
+            </div>
+        </div>
+        
+        <a href="page-editor-student1.html" id="page-editor">Page Editor</a>
+
+        <!--external script file-->
+		<script src="JS/shop-script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,128 @@
+*{
+    font-family: sans-serif;
+}
+body {
+    position: (relative/fixed/absolute);
+    top:6vh;
+    background-image:url(Img/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+ 
+ }
+
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: aliceblue;
+
+}
+.Qimg{
+    position: absolute;
+   bottom: 25%;
+   left: 5%;
+   }
+
+ .quiz-container{
+    background: rgba(0, 0, 0, 0.479);
+    box-shadow: 0 0 10px rgba(100, 100, 100, 0);
+    width: 600px;
+ }
+
+
+.quiz-header{
+    padding: 4rem;
+}
+
+h2{
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+
+}
+
+ul li label{
+    cursor: pointer;
+}
+
+button{
+    background: #35C2A8;
+    color: white;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 1.1rem;
+}
+
+#Editor{
+
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    font-size: 25px;
+    
+    }
+
+ #topic{
+
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    font-size: 50px;
+      }
+
+/* ----------------------------------nav bar-------------------------------- */
+header {
+    position: fixed;
+    width: 100%;
+    left: 0; /*making navbar to the left removing small gap */
+    top: 0; /*making navbar to the top removing small gap */
+    z-index: 2;/*only used in main page to make navbar to top over slider*/
+}
+
+#nav {
+    margin: 0;
+    background-color: #333;
+    text-align: right;
+}
+
+#nav li {
+    display: inline-block;
+    text-align: center;
+    font-size: x-large; /*font size*/
+    font-family: serif;
+    padding: 8px 16px; /* size of the nav bar*/
+}
+
+#nav li a {
+    color: inherit; /*make link color to parent color*/
+    text-decoration: none; /*remove underline*/
+}
+
+#nav li {
+    color: goldenrod;
+}
+
+#nav li:hover { /*change color when hovering*/
+    color: gold;
+    background-color: #111;
+}
+
+.active { /*show current nav tab*/
+    background-color: #111;
+    border-bottom: 4px solid gold;
+}

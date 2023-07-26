@@ -1,0 +1,153 @@
+body{
+    background: url("images/awardBack.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+.nav-box{
+
+    display: flex;
+    justify-content:right;
+    padding-bottom: 30px;
+    padding-right: 35px;
+   
+}
+
+.navbar{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    background-color: black;
+    margin: 0;
+    padding:0;
+    position:fixed;
+    
+
+}
+.navbar li{
+    padding: 0 20px;
+    display: inline;
+    box-shadow: 0 0 10px bisque;
+    border-radius: 5px;
+    
+}
+    
+.navbar li a{
+    font-size: 24px;
+    text-decoration: none;
+    color:aliceblue;
+}
+
+.navbar li a:hover{
+    color: rgb(42, 105, 105);
+}
+
+h1.head2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 40px;
+}
+
+/* border box for content to keep in the box */
+.content-box{
+    width: 60%;
+    background-color:rgb(53, 194, 168,0.15);
+    margin: 0 30%;
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.image-box img{
+    width: 80%;
+    display: block;
+}
+/* to indent */
+.img-description h1,p{
+    margin-left: -65px;
+}
+
+/* flex 1 for split the box 50% */
+.image-box{
+    flex: 1;
+    padding: 20px;
+    
+}
+.img-description{
+    flex: 1;
+    padding:10px;
+    margin:0px;
+}
+
+.img-description p{
+    color: #ffffff;
+    font-size:large ;
+}
+
+
+/* styling for director */
+.img-description p.director{
+    color: rgb(199, 171, 98);
+    font-weight: bold;
+}
+
+.img-description h1{
+    color: rgb(181, 165, 73);
+    
+
+}
+
+.head1{
+    color: rgb(201, 160, 64);
+    font-size: 50px;
+}
+
+h2{
+    color: rgb(199, 171, 98);
+    margin: 0%;
+    margin-left: 20%;
+    margin-bottom: 10px;
+    font-size: 30px;  
+}
+
+
+
+footer a{
+    text-decoration: none;
+    padding: 5px;
+    color: #000;
+    
+}
+
+/* inline to represent the both links side by side */
+
+footer p{
+    text-align: center;
+    border: 3px solid #ffffff ;
+    display: inline;
+    background-color: rgba(169, 146, 117, 0.774);
+    margin-right: 100px;
+    border-radius: 4px;
+    font-size: large;
+    
+}
+footer{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer a:hover{
+    font-weight: bold;
+}
+
+

@@ -1,0 +1,219 @@
+#bg-img {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+body {
+    display: block;
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;/*stop repeating the bg image*/
+    background-attachment: fixed;/*fixed in the position without moving when scrolling */
+    background-size: cover;
+    margin: 0;
+}
+
+/* ----------------------------------------body below------------------------------------------- */
+
+a {/*removing link underline and color properties*/
+    text-decoration: none;
+    color: inherit;
+}
+
+.img-top { /*welcoming image*/
+    background-image: url(images/movie-1.jpg);
+    width: 1200px;
+    height: 500px;
+    background-position: center; /*center the image */
+    background-size: cover;
+
+    margin: auto;
+    margin-top: 40px;
+
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: yellow;
+}
+
+/*-----------------------------------------flex*/
+
+.content-image {
+    display: flex;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0% 10%;
+}
+
+/* ------------------------------------------flex above-------------------- */
+
+.content-image .image-1 {
+    background-image: url(images/movie-1.jpg);
+}
+
+.content-image .image-2 {
+    background-image: url(images/actor.jpg);
+}
+
+.content-image .image-3 {
+    background-image: url(images/award.jpeg);
+}
+
+.content-image .image-4 {
+    background-image: url(images/locations.jpg);
+}
+
+
+.content-image .image {
+    display: flex;
+    width: 500px;
+    height: 350px;
+    background-position: center;
+    /*center the image */
+    background-size: cover;
+    /*image covers whole area by resizing*/
+    align-items: center;
+    /* align vertical position */
+    justify-content: center;
+    /* align horizontal position */
+    color: #35c2a8;
+    border-radius: 10% 10%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.content-image .image div {
+    font-size: 50px;
+    font-family: 'Lucida Sans';
+    text-align: center;
+    opacity: 0;
+}
+
+.content-image .image:hover div {
+    opacity: 1;
+}
+
+.content-image .image:hover {
+    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.8) inset;
+}
+
+/* ------------------------------------------shop below-------------------------------------- */
+#shop {
+    background-image: url(images/shop.jpg);
+    width: 1200px;
+    height: 500px;
+    background-position: center;/*center the image */
+    background-size: cover;
+
+    margin: auto;
+    margin-top: 100px;
+
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+input[value="Shop Now"] {
+    height: 50px;
+    width: 100px;
+    border-radius: 20% 20%;
+    background-color: orangered;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ----------------------------------------------shop above------------------------------- */
+
+#quiz {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+input[value="Try Quiz"] {
+    height: 50px;
+    width: 100px;
+    border-radius: 20% 20%;
+    background-color: greenyellow;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* -----------------------------------------footer-------------------------- */
+footer {
+    background-color: #111;
+    height: 400px;
+}
+
+#footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer-container .quick-links,#footer-container .contacts {
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    cursor: pointer;
+}
+
+#footer-container .title {
+    font-weight: bold;
+    color: goldenrod;
+}
+
+
+#footer-container .profile-1 {
+    background-image: url(images/danidu.jpg);
+}
+
+#footer-container .profile-2 {
+    background-image: url(images/chethiya.jpg);
+}
+
+#footer-container .profile-3 {
+    background-image: url(images/nirmal.jpg);
+}
+
+#footer-container .profile-4 {
+    background-image: url(images/chamika.jpg);
+}
+
+#footer-container .profile {
+    width: 100px;
+    height: 100px;
+    background-position: center;/*center the image */
+    background-size: cover;/*image covers whole area by resizing*/
+    border-radius: 50% 50%;
+    text-align: center;
+    line-height: 100px;
+    color: yellow;
+    font-family: serif;
+    margin: 15px;
+    cursor: pointer;
+}
+
+#footer-container .profile div {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    opacity: 0;
+}
+
+#footer-container .profile:hover div {
+    opacity: 1;
+}
+
+#footer-container .profile:hover {
+    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.8) inset;
+}
